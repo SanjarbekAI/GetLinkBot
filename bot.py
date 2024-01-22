@@ -14,7 +14,7 @@ CHANNEL_ID = env.str("CHANNEL_ID")
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 
-ADMINS = env.str("ADMINS")
+ADMINS = env.list("ADMINS")
 
 generate_link_button = ReplyKeyboardMarkup(
     keyboard=[[
